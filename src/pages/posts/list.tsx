@@ -38,6 +38,10 @@ export const PostList: React.FC<IResourceComponentsProps> = () => {
         resource: "categories",
         optionLabel: "title",
         optionValue: "id",
+
+        pagination: {
+            mode: "server"
+        }
     });
 
     const { data: canAccess } = useCan({

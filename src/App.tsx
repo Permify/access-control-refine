@@ -46,7 +46,6 @@ const App: React.FC = () => {
       <ConfigProvider theme={RefineThemes.Blue}>
         <AntdApp>
           <Refine
-            routerProvider={routerProvider}
             dataProvider={dataProvider(API_URL)}
             accessControlProvider={{
               can: async ({ action, params, resource }) => {
